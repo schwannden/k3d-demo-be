@@ -8,7 +8,7 @@ test:
 
 # build image
 build:
-  docker build . -t "schwannden/k3d-demo-be:$(poetry version -s)"
+  docker build . -f Dockerfile.prod -t "schwannden/k3d-demo-be:$(poetry version -s)"
 
 # publish image
 publish:
